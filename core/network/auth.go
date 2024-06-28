@@ -7,7 +7,8 @@ type AuthenticatedClient struct {
 	session string
 }
 
-func NewAuthenticatedClient(client *http.Client, session string) *AuthenticatedClient {
+func NewAuthenticatedClient(session string) *AuthenticatedClient {
+	client := NewClient()
 	return &AuthenticatedClient{client, session}
 }
 
