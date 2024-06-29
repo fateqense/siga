@@ -39,3 +39,14 @@ type PartialAbsenceRespose struct {
 	TotalAbsences  float64  `json:"totalAbsences"`
 	Lessons        []Lesson `json:"lessons"`
 }
+
+type HistoryResponse struct {
+	Cod               string  `json:"cod"`
+	DisiplineName     string  `json:"disciplineName"`
+	Description       string  `json:"description"`
+	FinalGrade        float64 `json:"finalGrade"`
+	TotalAbsences     float64 `json:"totalAbsences"`
+	PresenceFrequency float64 `json:"presenceFrequency"`
+	RenunciationAt    string  `json:"renunciationAt"`
+	IsApproved        bool    `json:"isApproved"`
+}
