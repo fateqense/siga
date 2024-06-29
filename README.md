@@ -7,8 +7,9 @@ An unofficial SIGA api to help you to create applications that integrate with SI
 
 ## ✨ Routes
 
-| Method | Path          | Description         |
-| ------ | ------------- | ------------------- |
-| POST   | `/auth/login` | Login the student   |
-| GET    | `/profile`    | Get student profile |
-| GET    | `/grades`     | Get student grades  |
+| Method | Path          | Description           |
+| ------ | ------------- | --------------------- |
+| POST   | `/auth/login` | Login the student     |
+| GET    | `/profile`    | Get student profile   |
+| GET    | `/grades`     | Get student grades    |
+| GET    | `/absences`   | Get student absences  |

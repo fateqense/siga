@@ -13,6 +13,7 @@ func (Server) BuildRoutes() *http.ServeMux {
 	api.HandleFunc("POST /auth/login", http.HandlerFunc(studentController.LoginRoute))
 	api.HandleFunc("GET /profile", http.HandlerFunc(studentController.GetProfileRoute))
 	api.HandleFunc("GET /grades", http.HandlerFunc(studentController.GetPartialGradesRoute))
+	api.HandleFunc("GET /absences", http.HandlerFunc(studentController.GetPartialAbsencesRoute))
 
 	return api
 }

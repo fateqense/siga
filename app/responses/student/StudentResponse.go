@@ -25,3 +25,17 @@ type PartialGradeResponse struct {
 	AverageGrade  float64 `json:"averageGrade"`
 	Exams         []*Exam
 }
+
+type Lesson struct {
+	Title     string  `json:"title"`
+	Date      string  `json:"date"`
+	Presences float64 `json:"presences"`
+	Absences  float64 `json:"absences"`
+}
+type PartialAbsenceRespose struct {
+	Cod            string   `json:"cod"`
+	DisiplineName  string   `json:"disciplineName"`
+	TotalPresences float64  `json:"totalPresences"`
+	TotalAbsences  float64  `json:"totalAbsences"`
+	Lessons        []Lesson `json:"lessons"`
+}
