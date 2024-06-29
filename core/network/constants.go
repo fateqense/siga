@@ -6,6 +6,9 @@ const (
 )
 
 const (
-	LOGIN_URL = "https://siga.cps.sp.gov.br/ALUNO/login.aspx"
-	HOME_URL  = "https://siga.cps.sp.gov.br/ALUNO/home.aspx"
+	LOGIN_URL            = "https://siga.cps.sp.gov.br/ALUNO/login.aspx"
+	HOME_URL             = "https://siga.cps.sp.gov.br/ALUNO/home.aspx"
+	PARTIAL_GRADES_URL   = "https://siga.cps.sp.gov.br/ALUNO/notasparciais.aspx"
+	PARTIAL_ABSENCES_URL = "https://siga.cps.sp.gov.br/ALUNO/faltasparciais.aspx"
+	HISTORY_URL          = "https://siga.cps.sp.gov.br/ALUNO/historicocompleto.aspx"
 )

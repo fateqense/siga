@@ -12,6 +12,7 @@ func (Server) BuildRoutes() *http.ServeMux {
 	studentController := controllers.StudentController{}
 	api.HandleFunc("POST /auth/login", http.HandlerFunc(studentController.LoginRoute))
 	api.HandleFunc("GET /profile", http.HandlerFunc(studentController.GetProfileRoute))
+	api.HandleFunc("GET /grades", http.HandlerFunc(studentController.GetPartialGradesRoute))
 
 	return api
 }

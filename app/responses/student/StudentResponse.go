@@ -13,3 +13,15 @@ type ProfileResponse struct {
 	AverageGrade       int    `json:"averageGrade"`
 	Progression        int    `json:"progression"`
 }
+
+type Exam struct {
+	Title    string `json:"title"`
+	StartsAt string `json:"startsAt"`
+	Grade    int    `json:"grade"`
+}
+type PartialGradeResponse struct {
+	Cod           string  `json:"cod"`
+	DisiplineName string  `json:"disciplineName"`
+	AverageGrade  float64 `json:"averageGrade"`
+	Exams         []*Exam
+}
