@@ -50,3 +50,18 @@ type HistoryResponse struct {
 	RenunciationAt    string  `json:"renunciationAt"`
 	IsApproved        bool    `json:"isApproved"`
 }
+
+type Discipline struct {
+	Cod                  string  `json:"cod"`
+	Name                 string  `json:"name"`
+	TeacherName          string  `json:"teacherName"`
+	Class                string  `json:"class"`
+	Workload             int     `json:"workload"`
+	TotalAbsencesAllowed float64 `json:"totalAbsencesAllowed"`
+}
+type ScheduleResponse struct {
+	Cod        string     `json:"cod"`
+	StartsAt   string     `json:"startsAt"`
+	EndsAt     string     `json:"endsAt"`
+	Discipline Discipline `json:"discipline"`
+}

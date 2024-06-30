@@ -15,6 +15,7 @@ func (Server) BuildRoutes() *http.ServeMux {
 	api.HandleFunc("GET /grades", http.HandlerFunc(studentController.GetPartialGradesRoute))
 	api.HandleFunc("GET /absences", http.HandlerFunc(studentController.GetPartialAbsencesRoute))
 	api.HandleFunc("GET /history", http.HandlerFunc(studentController.GetHistoryRoute))
+	api.HandleFunc("GET /schedule", http.HandlerFunc(studentController.GetScheduleRoute))
 
 	return api
 }

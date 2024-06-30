@@ -11,4 +11,5 @@ const (
 	PARTIAL_GRADES_URL   = "https://siga.cps.sp.gov.br/ALUNO/notasparciais.aspx"
 	PARTIAL_ABSENCES_URL = "https://siga.cps.sp.gov.br/ALUNO/faltasparciais.aspx"
 	HISTORY_URL          = "https://siga.cps.sp.gov.br/ALUNO/historicocompleto.aspx"
+	SCHEDULE_URL         = "https://siga.cps.sp.gov.br/ALUNO/horario.aspx"
 )

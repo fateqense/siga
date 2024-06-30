@@ -14,3 +14,4 @@ An unofficial SIGA api to help you to create applications that integrate with SI
 | GET    | `/grades`     | Get student grades    |
 | GET    | `/absences`   | Get student absences  |
 | GET    | `/history`    | Get student history   |
+| GET    | `/schedule`   | Get student schedule  |
